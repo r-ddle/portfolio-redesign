@@ -11,7 +11,7 @@ function App() {
     <BrowserRouter>
       <Routes>
         <Route
-          path="/"
+          path="/portfolio-redesign"
           element={
             <motion.div
               initial={{ opacity: 0, y: 50 }}
@@ -24,7 +24,7 @@ function App() {
           }
         />
         <Route
-          path="/main-projects"
+          path="/portfolio-redesign/main-projects"
           element={
             <motion.div
               initial={{ opacity: 0, y: 50 }}
@@ -37,7 +37,7 @@ function App() {
           }
         />
         <Route
-          path="/mini-projects"
+          path="/portfolio-redesign/mini-projects"
           element={
             <motion.div
               initial={{ opacity: 0, y: 50 }}
@@ -50,7 +50,7 @@ function App() {
           }
         />
         <Route
-          path="/active-projects"
+          path="/portfolio-redesign/active-projects"
           element={
             <motion.div
               initial={{ opacity: 0, y: 50 }}
@@ -63,7 +63,7 @@ function App() {
           }
         />
         <Route
-          path="/mobile-404"
+          path="/portfolio-redesign/mobile-404"
           element={
             <motion.div
               initial={{ opacity: 0, y: 50 }}
