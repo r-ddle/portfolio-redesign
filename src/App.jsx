@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route, HashRouter } from "react-router-dom";
 import Home from "./pages/Home";
 import MainProj from "./pages/MainProjects"
 import MiniProj from "./pages/MiniProjects"
@@ -15,8 +15,8 @@ function App() {
         animate={{ opacity: 1 }}
         transition={{ duration: 1 }}
         >
-        <BrowserRouter location={location} key={location.pathname}>
-            <Routes location={location} key={location.pathname}>
+        <HashRouter>
+            <Routes>
             {isMobile ? (
                 <Route path="*" element={<MobileNotSupported />} />
             ) : (
@@ -76,7 +76,7 @@ function App() {
                 </>
             )}
             </Routes>
-        </BrowserRouter>
+        </HashRouter>
         </motion.div>
     );
 }
