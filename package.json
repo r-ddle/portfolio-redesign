@@ -1,4 +1,5 @@
 {
+    "homepage": "https://r-ddle.github.io/portfolio-redesign/",
     "name": "portfolio-redesign",
     "private": true,
     "version": "0.0.0",
@@ -7,7 +8,9 @@
         "dev": "vite",
         "build": "vite build",
         "lint": "eslint .",
-        "preview": "vite preview"
+        "preview": "vite preview",
+        "predeploy": "npm run build",
+        "deploy": "gh-pages -d build"
     },
     "dependencies": {
         "@radix-ui/react-avatar": "^1.1.1",

@@ -15,7 +15,7 @@ function App() {
         animate={{ opacity: 1 }}
         transition={{ duration: 1 }}
         >
-        <BrowserRouter>
+        <Routes location={location} key={location.pathname}>
             <Routes>
             {isMobile ? (
                 <Route path="*" element={<MobileNotSupported />} />
@@ -76,7 +76,7 @@ function App() {
                 </>
             )}
             </Routes>
-        </BrowserRouter>
+        </Routes>
         </motion.div>
     );
 }
